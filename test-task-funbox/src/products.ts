@@ -7,6 +7,7 @@ const products = [
     present: 'мышь в подарок',
     weight: 0.5,
     description: 'Печень утки разварная с артишоками.',
+     
   },
   {
     massage: 'Сказочное заморское яство',
