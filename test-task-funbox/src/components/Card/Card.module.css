@@ -6,17 +6,39 @@
   font-family: "Trebuchet MS";
   border: 4px solid #1698D9;
   border-radius: 10px;
-  background: linear-gradient(134.5deg, transparent 28px, white 0); 
+  background: linear-gradient(134.5deg, transparent 27px, white 0); 
   clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
   margin: 0 38px 0 38px;
   cursor: pointer;
 }
+.card:hover, .card:hover::before {
+  border-color: #2EA8E6;
+  transition: 0.6s;
+}
+.card:hover .weight {
+  background: #2EA8E6;
+  transition: 0.6s;
+} 
+.cardActive {
+  width: 316px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS";
+  border: 4px solid #D91667;
+  border-radius: 10px;
+  background: linear-gradient(134.5deg, transparent 27px, white 0);
+  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+  margin: 0 38px 0 38px;
+  cursor: pointer;
+}
+
 .content {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 48px;
+  margin-left: 48px; 
 }
 .card::before {
   position: absolute;
@@ -26,6 +48,17 @@
   top: -5px;
   left: -58px;
   border-bottom: solid #1698D9 4px;
+  transform: rotate(-46deg);
+}
+
+.cardActive::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 40px;
+  top: -5px;
+  left: -58px;
+  border-bottom: solid #D91667 4px;
   transform: rotate(-46deg);
 }
 .massage {
@@ -83,6 +116,7 @@
   border-radius: 50%;
   z-index: 2;
 }
+
 .weight p {
   font-size: 42px;
   line-height: 30px;
@@ -93,6 +127,33 @@
   margin-top: 18px;
 }
 .weight p:last-child {
+  font-size: 21px;
+}
+
+.weightActive {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #D91667;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.weightActive p {
+  font-size: 42px;
+  line-height: 30px;
+  color: white;
+  margin: 0; 
+}
+.weightActive p:first-child {
+  margin-top: 18px;
+}
+.weightActive p:last-child {
   font-size: 21px;
 }
 .status {
