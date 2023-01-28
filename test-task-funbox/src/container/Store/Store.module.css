@@ -26,11 +26,11 @@ h2 {
 
 @media screen and (max-width: 1440px) {
   .cards {
-    width: 768;
     justify-content: center;
     flex-wrap: wrap-reverse;
   }
 }
+
 @media screen and (max-width: 500px) {
   .title {
     font-size: 20px;

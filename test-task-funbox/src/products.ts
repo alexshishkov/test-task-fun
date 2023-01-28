@@ -11,7 +11,7 @@ const products: IProduct[] = [
     weight: 0.5,
     description: 'Печень утки разварная с артишоками.',
     wasChosen: false,
-    active: false,
+    active: 'not active',
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ const products: IProduct[] = [
     weight: 2,
     description: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
     wasChosen: false,
-    active: false,
+    active: 'not active',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const products: IProduct[] = [
     weight: 5,
     description: 'Филе из цыплят с трюфелями в бульоне.',
     wasChosen: false,
-    active: false,
+    active: 'not active',
   },
 ];
 

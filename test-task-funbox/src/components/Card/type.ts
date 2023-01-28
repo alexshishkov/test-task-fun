@@ -8,5 +8,5 @@ export interface IProduct {
   weight: number,
   description: string, 
   wasChosen: boolean,
-  active: boolean,
+  active: string,
 }
