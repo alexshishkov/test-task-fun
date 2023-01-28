@@ -35,4 +35,7 @@ h2 {
   .title {
     font-size: 20px;
   }
+  .cards {
+    width: 310px;
+  }
 }
