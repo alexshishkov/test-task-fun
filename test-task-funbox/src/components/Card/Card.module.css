@@ -120,6 +120,8 @@ input {
   border: none;
   font-family: "Trebuchet MS";
   font-size: 47px;
+  padding: 0;
+  margin: 0;
 }
 
 ::placeholder {
@@ -302,6 +304,9 @@ input:focus {
 }
 
 @media screen and (max-width: 1440px) {
+  .card {
+    overflow-y: hidden;
+  }
   .status {
     margin-bottom: 50px;
   }
@@ -309,44 +314,45 @@ input:focus {
 
 @media screen and (max-width: 430px) {
   .card {
-    width: 260px;
+    width: 280px;
     clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    overflow-y: hidden;
     margin-left: 0;
     margin-right: 0;
   }
   .card::before {
-    width: 60px;
+    width: 65px;
     height: 5px;
-    top: 10px;
-    left: -12px;
+    top: 14px;
+    left: -15px;
     border-bottom: 4px solid #1698D9;
-    transform: rotate(-46deg);
+    transform: rotate(-44deg);
   }
   .cardActive {
-    width: 260px;
+    width: 280px;
     clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
   }
   .cardActive::before {
-    width: 60px;
+    width: 65px;
     height: 5px;
-    top: 10px;
-    left: -12px;
+    top: 14px;
+    left: -15px;
     border-bottom: 4px solid #D91667;
-    transform: rotate(-46deg);
+    transform: rotate(-44deg);
   }
   .cardDisabled {
-    width: 260px;
+    width: 280px;
     clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
     margin-left: 0;
     margin-right: 0;
   }
   .cardDisabled::before {
-    width: 60px;
+    width: 65px;
     height: 5px;
-    top: 10px;
-    left: -12px;
+    top: 14px;
+    left: -15px;
     border-bottom: 4px solid #B3B3B3;
-    transform: rotate(-46deg);
+    transform: rotate(-44deg);
   }
   .content {
     height: 100%;
